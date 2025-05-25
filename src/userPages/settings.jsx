@@ -33,7 +33,7 @@ export default function Settings() {
   const navigate = useNavigate();
 
   const referralLink = walletAddress
-    ? `https://hiprofeet.com/ref/${walletAddress.slice(0, 6)}`
+    ? `https://hipro.com/ref/${walletAddress.slice(0, 6)}`
     : "Connect wallet to generate referral link";
 
   const handleCopyWallet = () => {
