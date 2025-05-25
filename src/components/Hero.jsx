@@ -1000,7 +1000,7 @@ export default function Hero() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 50 }}
-                className="fixed bottom-4 right-4 px-4 py-2 text-xs sm:text-sm text-red-100 border rounded-lg bg-red-600/20 border-red-500/50 shadow-lg z-30"
+                className="fixed bottom-4 right-4 px-4 py-2 text-xs sm:text-sm text-red-100 border rounded-lg bg-red-500 border-red-500/50 shadow-lg z-30"
               >
                 <div className="flex items-center justify-between">
                   <span>{error}</span>
