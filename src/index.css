@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .gradient-bg {
+    background: linear-gradient(135deg, var(--color-bg-start), var(--color-bg-end));
+  }
+}
+
+:root {
+  --color-bg-start: #f9fafb;
+  --color-bg-end: #e5e7eb;
+  --color-text-header: #111827;
+  --color-text-body: #1f2937;
+  --color-text-sub: #6b7280;
+  --color-border: #d1d5db80;
+  --color-switch-off: #d1d5db;
+  --color-card-bg: #ffffff;
+  --color-chart-bg: #f3f4f6;
+  --color-text-on-color: #ffffff;
+  --color-accent-blue: #3b82f6;
+  --color-accent-purple: #9333ea;
+  --color-accent-green: #22c55e;
+  --color-accent-red: #a21111;
+  --color-accent-yellow: #eab308;
+  --color-sub-card-bg: #f9fafb;
+  --color-tx-row-bg: #f9fafb;
+}
+
+.dark {
+  --color-bg-start: #111827;
+  --color-bg-end: #1f2937;
+  --color-text-header: #f9fafb;
+  --color-text-body: #d1d5db;
+  --color-text-sub: #9ca3af;
+  --color-border: #37415180;
+  --color-switch-off: #4b5563;
+  --color-card-bg: #1f2937;
+  --color-chart-bg: #374151;
+  --color-text-on-color: #ffffff;
+  --color-accent-blue: #60a5fa;
+  --color-accent-purple: #a855f7;
+  --color-accent-green: #34d399;
+  --color-accent-yellow: #fbbf24;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-sub-card-bg: #4b5563;
+    --color-tx-row-bg: linear-gradient(to bottom right, var(--color-bg-start), var(--color-bg-end));
+  }
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-out;
+}
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
